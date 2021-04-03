@@ -4,11 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css" >
-	<link rel="stylesheet" href="css/normalize.css" >
 	<link rel="shortcut icon" href="img/icon/needle.png" type="image/x-icon">
 	<title>Gallery | Frances Pokes</title>
 </head>
 <body>
+
+
+	<div class="container-preloader">
+		<div class="circle circle-1"></div>
+		<div class="circle circle-2"></div>
+		<div class="circle circle-3"></div>
+		<div class="circle circle-4"></div>
+		<div class="circle circle-5"></div>
+	</div>
+
 	<div class="wrapper">
 		<header class="header">
 			<div class="header-wrapper">
@@ -20,13 +29,18 @@
 				</div>
 				<div class="header-menu">
 					<ul class="header-list">
-						<li class="header-item"><a href="index.html" class="header-link">Про мене</a></li>
-						<li class="header-item"><a href="gallery.html" class="header-link active">Галерея</a></li>
-						<li class="header-item"><a href="contact.html" class="header-link">Контакти</a></li>
+						<li class="header-item"><a href="index.html" class="header-link header-link1-lng"></a></li>
+						<li class="header-item"><a href="gallery.html" class="header-link header-link2-lng active"></a></li>
+						<li class="header-item"><a href="contact.html" class="header-link header-link3-lng"></a></li>						<li class="header-item">
+							<select class="header-select change-language">
+								<option value="en">EN</option>
+								<option value="ua">UA</option>
+							</select>
+						</li>
 					</ul>
 				</div>
-				<div class="header-button">
-					<button>
+				<div class="header-button-wrapper">
+					<button class="header-burger">
 						<span></span>
 						<span></span>
 						<span></span>
@@ -39,15 +53,13 @@
 			<div class="gallery-container">
 
 					<input class="checkbox-all" id="all" type="radio" name="checkbox" checked="" />
-					<label for="all">Всі роботи</label>
-	<!-- 				<input class="checkbox-dot" id="dot" type="radio" name="checkbox" />
-					<label for="dot">Дотворк</label> -->
+					<label class="subtitle4-lng" for="all"></label>
 					<input class="checkbox-line" id="line" type="radio" name="checkbox" />
-					<label for="line">Лайнворк</label>
+					<label class="subtitle1-lng" for="line"></label>
 					<input class="checkbox-color" id="color" type="radio" name="checkbox" />
-					<label for="color">Кольорові тату</label>
+					<label class="subtitle3-lng" for="color"></label>
 					<input class="checkbox-dot" id="dot" type="radio" name="checkbox" />
-					<label for="dot">Дотворк</label>
+					<label class="subtitle2-lng" for="dot"></label>
 		
 				<div class="seperator"></div>
 
@@ -124,6 +136,9 @@
 		</footer>
 
 	</div>
+	<script type="text/javascript" src="js/lang.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+
 </body>
 </html>
