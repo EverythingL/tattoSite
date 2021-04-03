@@ -1,0 +1,461 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Raleway:wght@300;400;600;800&display=swap');
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background: url(../img/about.JPG) center center /250% no-repeat fixed #BCC595FF;
+	color: lighten(#DDD8ABFF, 20);
+	a {
+		color: lighten(#DDD8ABFF, 20);
+		text-decoration: none;
+	}
+}
+.wrapper {
+	position: relative;
+	margin: 0 auto;
+	background-color: rgba(178, 188, 133, .8); 
+	box-shadow: 0px 0px 500px 500px darken(#BCC595FF, 7);
+
+}
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	background-color: rgba(178, 188, 133, .8); 
+	padding: 5px 0;
+}
+.header-wrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 1400px;
+	margin: 0 auto;
+	// border: 1px solid #000;
+	font-weight: 600;
+}
+.header-logo {
+	a {
+		display: flex;
+		align-items: center;
+		span {
+			display: block;
+			padding-right: 40px;
+			font-size: 28px;
+		}
+		img {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			object-fit: cover;
+			transition: .3s;
+			&:hover {
+				transform: scale(1.05, 1.05);
+			}
+		}
+	}
+}
+.header-list {
+	display: flex;
+}
+.header-item {
+	padding: 15px;
+	list-style-type: none;
+}
+.header-link {
+	font-size: 24px;
+	font-weight: 400;
+	transition: .3s;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	// text-transform: uppercase;
+	&:hover {
+		border-bottom: 2px solid lighten(#DDD8ABFF, 40);
+		border-top: 2px solid lighten(#DDD8ABFF, 40);
+
+	}
+	&.active {
+		font-weight: 600;
+		border-bottom: 2px solid lighten(#DDD8ABFF, 40);
+		border-top: 2px solid lighten(#DDD8ABFF, 40);
+	}
+}
+
+
+.header-button {
+	display: none;
+}
+
+// ***************************** START ABOUT BLOCK ****************************
+.inner-wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.about-wrapper {
+	padding-top: 100px;	
+}
+
+.about-descripton {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	min-height: 55vh;
+
+}
+.about-photo {
+	padding: 60px;
+	position: relative;
+	&:after {
+		content: 'Frances Pokes';
+		position: absolute;
+		left: 40px;
+		top: 70%;
+		font-family: 'Alex Brush', cursive;
+		font-size: 60px;
+		font-weight: 500;
+		transform: rotate(-9deg);
+		letter-spacing: 6px;
+
+	}
+	img{
+		height: 450px;
+		border-radius: 10px;
+		transition: .2s;
+		&:hover {
+			transform: scale(1.1, 1.1);
+		}
+	}
+}
+.about-text {
+	max-width: 600px;
+	text-align: justify;
+	h2 {
+		font-size: 30px;
+		font-weight: 600;
+	}
+	p {
+		font-size: 20px;
+
+	}
+	h3 {
+		font-size: 20px;
+		font-weight: normal;
+	}
+	ul {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		img {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			object-fit: cover;
+			transition: .2s;
+			&:hover {
+				transform: scale(1.25, 1.25);
+			}
+		}
+	}
+	li {
+		p {
+			padding-left: 6px;
+		}
+		padding: 3px;
+		list-style-type: '\270E';
+		font-weight: 600;
+		background-position: left left;		
+	}
+}
+.about-quotes {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 90vh;
+}
+.about-quotes_text {
+	position: relative;
+	max-width: 60%;
+	p {
+
+			text-align: left;
+			border-bottom: 2px solid #fff;
+			border-left: 2px solid #fff;
+			border-radius: 10%;			
+			padding: 20px;
+			display: inline-block;
+			font-size: 40px;
+			font-weight: 300;
+			line-height: 1.4;
+			&:after {
+				content: '\201D';
+				position: absolute;
+				left: -40px;
+				top: 0px;
+				width: 100px;
+				height: 100px;
+				font-size: 130px;
+
+			}
+
+		}
+}
+.about-quotes_footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	max-width: 900px;
+	font-size: 28px;
+	margin: 0 auto;
+	background: transparent;
+	p {
+		opacity: .6;
+	}
+	a {
+		color: lighten(#DDD8ABFF, 20);
+		opacity: .6;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+// ***************************** END ABOUT BLOCK ****************************
+
+
+// ***************************** START CONTACT BLOCK ****************************
+
+
+.contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 1400px;
+	margin: 0 auto;
+	min-height: 90vh;
+	padding-top: 100px;	
+}
+.contact-wrapper {
+	p {
+		margin: 0 auto;
+		max-width: 700px;
+		font-size: 40px;
+		font-weight: 600;
+		line-height: 1.5;
+		text-align: center;
+		padding: 10px;
+	}
+	ul {
+		margin: 0 auto;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;	
+		li {
+			list-style-type: none;
+			a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+				opacity: .7;
+				&:hover {
+					opacity: .9;
+				}
+				p {
+					margin: 0;
+				}
+				img {
+					width: 100px;
+					height: 100px;
+				}
+			}
+		}
+	}
+}
+iframe {
+	padding: 20px;
+	width: 400px;
+	height: 400px;
+	margin-top: 30px;
+	border-radius: 20%;
+}
+
+
+
+// ***************************** END CONTACT BLOCK ****************************
+
+
+// ***************************** START GALLERY BLOCK ****************************
+
+
+.gallery-wrapper {
+	width: 100%;
+	padding-top: 160px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	min-height: 80vh;
+}
+.gallery-container {
+	display: flex;
+	flex-direction: column;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+	position: absolute;
+	left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+	position: relative;
+	letter-spacing: 3px;
+	cursor: pointer;
+	line-height: 30px;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #fff;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	transition: all 0.2s ease;
+	text-align: center;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+	content: "";
+	border-radius: 10px;
+	height: 20px;
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 6px;
+	top: -4px;
+	z-index: -1;
+	transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label:after {
+	opacity: 0;
+	width: 0;
+}
+
+[type="radio"]:checked + label:after {
+	opacity: 1;
+	width: calc(100% - 24px);
+	width: 50%;
+	border-bottom: 2px solid white;
+}
+
+.checkbox-all:checked + label:after,
+.checkbox-all:not(:checked) + label:after {
+	background-color: #588C7EFF;
+}
+
+.checkbox-dot:checked + label:after,
+.checkbox-dot:not(:checked) + label:after {
+	background-color: #789C8AFF;
+}
+
+.checkbox-line:checked + label:after,
+.checkbox-line:not(:checked) + label:after {
+	background-color: #BCC595FF;
+}
+.checkbox-color:checked + label:after,
+.checkbox-color:not(:checked) + label:after {
+	background-color: #85A48CFF;
+}
+
+.checkbox-all:checked + label,
+.checkbox-color:checked  + label,
+.checkbox-line:checked + label,
+.checkbox-dot:checked  + label {
+	margin-left: 17px;
+}
+
+.seperator {
+	width: 100%;
+	height: 30px;
+}
+
+.cards {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 1000px;
+ }
+
+ .photo {
+ 	border-radius: 10px;
+ 	background: transparent;	
+ 	transition: all 0.3s linear;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	img {
+ 		margin: 0 auto;
+ 		padding: 10px;
+ 		width: 200px;
+ 		height: 250px;
+ 		object-fit: cover;
+ 		cursor: zoom-in;
+ 		border-radius: 30px;
+ 		transition: .3s;
+ 		&:hover {
+ 			transform: scale(1.3, 1.3);
+ 		}
+ 	}
+ }
+
+.photo.line,
+.photo.dot,
+.photo.color {
+  border: 3px solid rgba(182, 175, 123, .6);
+}
+
+
+.photo.line,
+.photo.dot,
+.photo.color {
+	opacity: 0;
+	transform: scale(0);
+	padding: 0;
+	margin: 0;
+	display: none;
+	visibility: hidden;
+	border-width: 0;
+}
+
+.checkbox-all:checked ~ .cards .photo.line,
+.checkbox-all:checked ~ .cards .photo.dot,
+.checkbox-all:checked ~ .cards .photo.color,
+.checkbox-line:checked ~ .cards .photo.line,
+.checkbox-dot:checked ~ .cards .photo.dot,
+.checkbox-color:checked ~ .cards .photo.color {
+	opacity: 1;
+	min-height: 140px;
+	min-width: calc(22% - 28px);
+	padding: 0 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 20px;
+	visibility: visible;
+	transform: scale(1);
+	border-width: 3px;
+	display: block;
+}
+
+// ***************************** END GALLERY BLOCK ****************************
+
+
+// // ********************************* MEDIA ********************************
+
+@import 'var.scss';
