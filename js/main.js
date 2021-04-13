@@ -23,5 +23,5 @@ window.onload = () => {
 	const preloader = $('.container-preloader');
 	preloader.style.display = 'none';
 	$('.wrapper').style.display = 'block';
-	// body.style.backgroundImage = `url(img/newImg/about.jpg)`;
+	body.style.backgroundImage = `url(img/newImg/about.JPG)`;
 }
