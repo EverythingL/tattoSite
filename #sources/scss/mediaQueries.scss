@@ -33,6 +33,17 @@
 			}
 		}
 	}
+
+	.contact-button-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.contact-button-modal {
+		max-width: 70%;
+	}
+
+
 }
 
 @media only screen and (max-width: 860px) {
@@ -122,14 +133,14 @@
 		padding-top: 10px;
 	// text-transform: uppercase;
 	&:hover {
-		border-bottom: 2px solid lighten(#DDD8ABFF, 40);
-		border-top: 2px solid lighten(#DDD8ABFF, 40);
+		border-bottom: 2px solid rgb(161, 160, 145);
+		border-top: 2px solid  rgb(161, 160, 145);
 
 	}
 	&.active {
 		font-weight: 600;
-		border-bottom: 2px solid lighten(#DDD8ABFF, 40);
-		border-top: 2px solid lighten(#DDD8ABFF, 40);
+		border-bottom: 2px solid rgb(161, 160, 145);
+		border-top: 2px solid  rgb(161, 160, 145);
 	}
 }
 

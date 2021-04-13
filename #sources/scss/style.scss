@@ -17,16 +17,16 @@ body {
 	background-size: cover;
 	background-origin: padding-box;
 	background-clip: border-box;
-	color: lighten(#DDD8ABFF, 20);
+	color: #fafaf4;
 	a {
-		color: lighten(#DDD8ABFF, 20);
+		color: #fafaf4;
 		text-decoration: none;
 	}
 }
- 
+
 // ********************** PRELOADER *************************************
 
-$color: lighten(#588C7EFF, 1), lighten(#588C7EFF, 10), lighten(#588C7EFF, 15), lighten(#588C7EFF, 20), lighten(#588C7EFF, 25); 
+$color: #5a8f81, #71a698, #81b0a3, #90baae, #a0c3ba; 
 
 
 .container-preloader {
@@ -89,7 +89,7 @@ $circle-margin: 7px;
 	position: relative;
 	margin: 0 auto;
 	background-color: rgba(178, 188, 133, .8); 
-	box-shadow: 0px 0px 500px 500px darken(#BCC595FF, 7);
+	box-shadow: 0px 0px 500px 500px #adb87e;
 
 }
 .header {
@@ -148,7 +148,7 @@ $circle-margin: 7px;
 	cursor: pointer;
 
 	option {
-		color: darken(#DDD8ABFF, 20);
+		color: #c0b662;
 		background-color: transparent;
 		font-size: 16px;
 		// margin-left: 5px;
@@ -157,11 +157,6 @@ $circle-margin: 7px;
 		}
 	}
 }
-
-// .header-select-option {
-// 	background-color: none;
-
-// }
 
 .header-item {
 	padding: 15px;
@@ -175,14 +170,14 @@ $circle-margin: 7px;
 	padding-top: 10px;
 	// text-transform: uppercase;
 	&:hover {
-		border-bottom: 2px solid lighten(#DDD8ABFF, 40);
-		border-top: 2px solid lighten(#DDD8ABFF, 40);
+		border-bottom: 2px solid white;
+		border-top: 2px solid white;
 
 	}
 	&.active {
 		font-weight: 600;
-		border-bottom: 2px solid lighten(#DDD8ABFF, 40);
-		border-top: 2px solid lighten(#DDD8ABFF, 40);
+		border-bottom: 2px solid white;
+		border-top: 2px solid white;
 	}
 }
 
@@ -317,7 +312,7 @@ $circle-margin: 7px;
 		opacity: .6;
 	}
 	a {
-		color: lighten(#DDD8ABFF, 20);
+		color: #fafaf4;
 		opacity: .6;
 		&:hover {
 			opacity: 1;
@@ -521,34 +516,34 @@ iframe {
 	justify-content: center;
 	flex-wrap: wrap;
 	max-width: 1000px;
- }
+}
 
- .photo {
- 	border-radius: 10px;
- 	background: transparent;	
- 	transition: all 0.3s linear;
- 	display: flex;
- 	align-items: center;
- 	justify-content: center;
- 	img {
- 		margin: 0 auto;
- 		padding: 10px;
- 		width: 200px;
- 		height: 250px;
- 		object-fit: cover;
- 		cursor: zoom-in;
- 		border-radius: 30px;
- 		transition: .3s;
- 		&:hover {
- 			transform: scale(1.3, 1.3);
- 		}
- 	}
- }
+.photo {
+	border-radius: 10px;
+	background: transparent;	
+	transition: all 0.3s linear;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		margin: 0 auto;
+		padding: 10px;
+		width: 200px;
+		height: 250px;
+		object-fit: cover;
+		cursor: zoom-in;
+		border-radius: 30px;
+		transition: .3s;
+		&:hover {
+			transform: scale(1.3, 1.3);
+		}
+	}
+}
 
 .photo.line,
 .photo.dot,
 .photo.color {
-  border: 3px solid rgba(182, 175, 123, .6);
+	border: 3px solid rgba(182, 175, 123, .6);
 }
 
 
@@ -587,50 +582,19 @@ iframe {
 
 // ***************************** START MODAL BLOCK ****************************
 
-// .modal {
-// 	transform: scale(0);
-// 	opacity: 0;
-// 	visibility: hidden;
-// 	align-items: center;
-// 	justify-content: center;
-// 	z-index: 100;
-// 	position: absolute;
-// 	left: 0;
-// 	top: 0;
-// 	bottom: 0;
-// 	right: 0;
-// 	width: 100vw;
-// 	min-height: 110vh;
-// 	background: rgba(160, 143, 143, .7);
-// 	transition: .4s;
-// 	&.open {
-// 		display: flex;
-// 		opacity: 1;
-// 		transform: scale(1);
-// 		visibility: visible;
-// 	}
-// }
-// .modal-open {
-// 	padding: 15px;
-// 	position: relative;
-// 	border: 2px solid #fff;
-// 	border-radius: 10px;
-// 	background: rgba(160, 143, 143, .9);
-// }
-
 
 .modal {
 	opacity: 0;
 	align-items: center;
 	justify-content: center;
 	z-index: -100;
-	position: fixed;
+	position: absolute;
 	left: 0;
 	top: 0;
 	bottom: 0;
 	right: 0;
-	width: 100vw;
-	height: 100vh;
+	// width: 100vw;
+	// height: 120%;
 	background: rgba(160, 143, 143, .7);
 	transition: all .4s;
 	display: flex;
@@ -652,17 +616,12 @@ iframe {
 
 .modal.open .modal-open {
 	padding: 15px;
-	margin: 150px;
+	margin-top: 5%;
 	border: 2px solid #fff;
 	border-radius: 10px;
 	background: rgba(160, 143, 143, .9);
 	top: 0;
 }
-
-
-
-
-
 
 .modal-close {
     position: absolute;
